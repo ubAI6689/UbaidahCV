@@ -1,0 +1,244 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{ABU UBAIDAH AMIR BIN AB MAALEK} \\[7.5pt]
+\href{https://github.com/ubAI6689}{\raisebox{-0.05\height}\faGithub\ ubAI6689} \ $|$ \ 
+\href{https://www.linkedin.com/in/abu-ubaidah-amir-bin-ab-maalek-96486479/}{\raisebox{-0.05\height}\faLinkedin\ linkedin} \ $|$ \ 
+\href{mailto:abu@atlas-informatics.net}{\raisebox{-0.05\height}\faEnvelope \ abu@atlas-informatics.net} \ $|$ \ 
+\href{tel:+601123560027}{\raisebox{-0.05\height}\faMobile \ +601123560027} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+A competent technical person with a background in Physics, I have consistently demonstrated my ability to execute tasks in both academic and industrial settings. In my current role, I'm working side by side with the Department of Irrigation and Drainage, actively involve in the development and integration of the National Flood and Forecast Warning System, showcasing my proficiency in system integration, server maintenance, and operational tasks. Previously at the National Centre for Particle Physics, University of Malaya, I managed administrative operations while contributing to international collaborations such as CMS at CERN and Belle 2 in Japan. Outside of my primary responsibilities, I actively engage in hackathons and knowledge transfer in the fields of science and technology. My key strength lies in my capability to act independently, take initiative, making me an effective problem-solver in any technical team.
+
+
+%Experience
+\section{Work Experience}
+
+\begin{joblong}{Atlas Informatics PLT (IT Engineer)}{Aug 2022 - present}
+\item Actively involve in the development and integration of the National Flood and Forecast Warning System (NaFFWS) for the Department of Irrigation and Drainage (JPS) Malaysia.
+\item Assisting during the MTL (Monsoon Timur Laut) operation, a yearly 24/7 operation run by JPS to monitor nationwide flood, especially on the east coast of the Semenanjung.
+\item Part of the maintenance team for the National Flood Forecasting and Warning System (NaFFWS) Legacy System servicing the Department of Irrigation and Drainage.
+\end{joblong}
+
+
+\begin{joblong}{National Centre for Particle Physics, UM (Project Officer)}{Mar 2019 - Mar 2021}
+\item Responsible for the administrative aspect of the Centre. Managing grants and fundings. Conducting events (e.g. outreach, exhibition, short course, etc) for the Centre.
+\item Contact person for the international counterparts of NCPP from various particle physics institutions around the globe (e.g. CERN (Switzerland), KEK (Japan), DESY (Germany))
+\item MSc candidate for the centre involved with the Belle2 and CMS experiments.
+\end{joblong}
+
+\begin{joblong}{Perunding Iltizam Sdn Bhd (Control Room Engineer)}{Oct 2017 - Oct 2018}
+\item Operator for the National Flood Forecast and Warning System (NaFFWS) stationed at the Department of Irrigation and Drainage (JPS) Ampang.
+\item Conducting daily monitoring and reporting to ensure the system was up and running.
+\item Softwares: InfoWorks ICM, Oracle VirtualBox, Linux OS.
+\end{joblong}
+
+\begin{joblong}{CERN, Switzerland (Intern)}{Jun 2017 - Aug 2017}
+\item Physics intern in the Beam, Radiation, Illumination, and Luminosity (BRIL) group of CMS, CERN.
+\item Project title: Finding Multiple Peaks Signal in Fast Beam Conditions Monitor (BCM1F)
+\end{joblong}
+
+\begin{joblong}{National Centre for Particle Physics, UM (Research Assistant)}{Nov 2016 - Feb 2017}
+\item Involved in particle physics researches in collaboration with the Belle2 experiment (KEK, Tsukuba, Japan)
+\item Installed and configured the Belle II Analysis Software Framework (BASF2) in the University of Malaya’s DICC servers and local machines.
+\item Running simulation for the study of angular analysis of the production of B-meson at Belle2.
+\end{joblong}
+
+  
+% %Projects
+% \section{Projects}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+% \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2010 - 2015 & BSc (Physics) at \textbf{University of Malaya} \hfill \\
+
+2007 - 2008 & Life Science Foundation at \textbf{Pusat Asasi Sains, UM} \hfill \\ 
+
+2002 -2006 & SPM at \textbf{Sekolah Menengah Sains Tengku Muhammad Faris Petra} \hfill \\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+% %----------------------------------------------------------------------------------------
+% \section{Publications}
+% \begin{refsection}[citations.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Programming Languages &  \normalsize{C++, Python, JavaScript}\\
+Data Analysis & \normalsize{ROOT (C++), Pandas, Numpy, Matplotlib, Scikit-learn, Jupyter Notebook}\\
+Virtualization & \normalsize{Docker, VirtualBox}\\
+Dashboarding & \normalsize{Grafana, Prometheus}\\
+Version Control & \normalsize{Git, GitHub, GitLab}\\
+Database & \normalsize{MySQL, MongoDB, InfluxDB}\\
+Image Processing & \normalsize{OpenCV}\\
+Remote Access & \normalsize{SSH, RDP}\\
+Operating System & \normalsize{Linux, Windows}\\
+\end{tabularx}
+
+% \vfill
+% \center{\footnotesize Last updated: \today}
+
+\end{document}
