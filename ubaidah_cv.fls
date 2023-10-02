@@ -1,8 +1,8 @@
-PWD c:/Users/U S E R/Downloads/autoCV-main/autoCV-main
+PWD c:/Users/U S E R/OneDrive/Documents/UbaidahCV
 INPUT c:/texlive/2022/texmf.cnf
 INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/U S E R/Downloads/autoCV-main/autoCV-main/ubaidah_cv.tex
+INPUT c:/Users/U S E R/OneDrive/Documents/UbaidahCV/ubaidah_cv.tex
 OUTPUT ubaidah_cv.log
 INPUT c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2022/texmf-dist/tex/latex/base/article.cls

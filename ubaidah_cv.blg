@@ -1,9 +1,9 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'ubaidah_cv.blg'
-[113] biber-MSWIN32:340> INFO - === 
-[162] Biber.pm:418> INFO - Reading 'ubaidah_cv.bcf'
-[301] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[319] bbl.pm:654> INFO - Writing 'ubaidah_cv.bbl' with encoding 'UTF-8'
-[320] bbl.pm:757> INFO - Output to ubaidah_cv.bbl
-[320] Biber.pm:130> WARN - The file 'ubaidah_cv.bcf' does not contain any citations!
-[320] Biber.pm:132> INFO - WARNINGS: 1
+[116] biber-MSWIN32:340> INFO - === 
+[153] Biber.pm:418> INFO - Reading 'ubaidah_cv.bcf'
+[264] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[280] bbl.pm:654> INFO - Writing 'ubaidah_cv.bbl' with encoding 'UTF-8'
+[280] bbl.pm:757> INFO - Output to ubaidah_cv.bbl
+[280] Biber.pm:130> WARN - The file 'ubaidah_cv.bcf' does not contain any citations!
+[280] Biber.pm:132> INFO - WARNINGS: 1

@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber ubaidah_cv"] 1694340258 "ubaidah_cv.bcf" "ubaidah_cv.bbl" "ubaidah_cv" 1694340265
-  "ubaidah_cv.bcf" 1694340265 106802 f5fd89998743517e233a532b73450049 "pdflatex"
+["biber ubaidah_cv"] 1696228034 "ubaidah_cv.bcf" "ubaidah_cv.bbl" "ubaidah_cv" 1696228199
+  "ubaidah_cv.bcf" 1696228199 106802 f5fd89998743517e233a532b73450049 "pdflatex"
   (generated)
   "ubaidah_cv.bbl"
   "ubaidah_cv.blg"
-["pdflatex"] 1694340264 "c:/Users/U S E R/Downloads/autoCV-main/autoCV-main/ubaidah_cv.tex" "ubaidah_cv.pdf" "ubaidah_cv" 1694340265
+["pdflatex"] 1696228197 "c:/Users/U S E R/OneDrive/Documents/UbaidahCV/ubaidah_cv.tex" "ubaidah_cv.pdf" "ubaidah_cv" 1696228199
   "c:/Users/U" 1665809921 18934 8837b2703938dede952853c47de76e86 ""
-  "c:/Users/U S E R/Downloads/autoCV-main/autoCV-main/ubaidah_cv.tex" 1694340183 11070 a5859f9a4ffc60093164b48ea0ac6902 ""
+  "c:/Users/U S E R/OneDrive/Documents/UbaidahCV/ubaidah_cv.tex" 1696228196 11688 c4841c80235380a97d0273f9830c3b91 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1660635091 2920 d63721872b8c77041b88e51b8f7c291d ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1660635091 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1660635091 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -116,11 +116,11 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1660644820 4635057 726141cbba16209253bf7c6bcaf821dc ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1660645019 2873720 4e1c40588f434acc267761c3045b5753 ""
   "c:/texlive/2022/texmf.cnf" 1660644788 713 e69b156964470283e0530f5060668171 ""
-  "ubaidah_cv.aux" 1694340265 1088 446fed61f9e842b8370247aaa4b16f6c "pdflatex"
-  "ubaidah_cv.bbl" 1694340261 486 ee04f40f768daeed26442158e95aba61 "biber ubaidah_cv"
-  "ubaidah_cv.out" 1694340265 360 91841c8b7a30d6f9013f17d1b11f6f6a "pdflatex"
-  "ubaidah_cv.run.xml" 1694340265 2352 2f0eaf9ac26c35eb9f13f3027f260f3d "pdflatex"
-  "ubaidah_cv.tex" 1694340183 11070 a5859f9a4ffc60093164b48ea0ac6902 ""
+  "ubaidah_cv.aux" 1696228199 1088 446fed61f9e842b8370247aaa4b16f6c "pdflatex"
+  "ubaidah_cv.bbl" 1696228036 486 ee04f40f768daeed26442158e95aba61 "biber ubaidah_cv"
+  "ubaidah_cv.out" 1696228199 360 91841c8b7a30d6f9013f17d1b11f6f6a "pdflatex"
+  "ubaidah_cv.run.xml" 1696228199 2352 2f0eaf9ac26c35eb9f13f3027f260f3d "pdflatex"
+  "ubaidah_cv.tex" 1696228196 11688 c4841c80235380a97d0273f9830c3b91 ""
   (generated)
   "ubaidah_cv.aux"
   "ubaidah_cv.bcf"
